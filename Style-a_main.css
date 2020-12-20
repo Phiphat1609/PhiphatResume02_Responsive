@@ -1,0 +1,45 @@
+/* Clear Master for box-sizing, margin, padding & border */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+
+/* Body style behaviors */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #6b6b6b;
+    overflow-x: hidden;
+}
+
+
+/* Link style behaviors */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+/* --------------------------------------------------- */

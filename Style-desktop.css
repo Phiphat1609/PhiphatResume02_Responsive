@@ -1,0 +1,382 @@
+/* For desktop &landscape tablets Screen >=1201px: Responsive behaviors */
+
+@media only screen and (min-width: 1201px) {
+    /* --------------------------------------------------- */
+    /* 1st-Section: Welcome page style*/
+    .wlcm {
+        width: 100vw;
+        height: 60vw;
+        background-image: url('./pexels-pixabay-414645.jpg');
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+    }
+    /* 1st-Welcome: Grid-Container area style */
+    .sec-container1 {
+        width: 100vw;
+        height: 44vw;
+        display: grid;
+        grid: '. . . .' '. ttlnm . .' '. . . .';
+    }
+    /* Title name Box: a Single of Grid area style */
+    .wlbx {
+        grid-area: ttlnm;
+        width: 25vw;
+        height: 12.5vw;
+        padding: 1.5vw;
+        border-radius: 1vw;
+        background-color: rgba(0, 0, 0, 25%);
+        justify-self: left;
+        color: white;
+        text-align: left;
+        font-size: 1.8vw;
+        text-shadow: 0.5vw 0.5vw 1.5vw rgb(0, 0, 0);
+    }
+    /* --------------------------------------------------- */
+    /* 2nd-Welcome: Container Grid area style */
+    .ttl-container2 {
+        width: 100vw;
+        height: 14.8vw;
+        padding: 0.15vw;
+        border-radius: 0.5vw;
+        display: grid;
+        grid: 'intdc intdc dtl imgp' / 30vw 28vw 25vw 16vw;
+        background-color: rgba(255, 255, 255, 75%);
+        text-align: left;
+    }
+    /* 1st-Box: Grid area of Resume objectives style */
+    .int {
+        display: inline-block;
+        grid-area: intdc;
+        width: 55vw;
+        height: 15vw;
+        padding: 1.5vw;
+        font-size: 1.3vw;
+        text-align: left;
+        line-height: 2vw;
+    }
+    .int p {
+        text-indent: 3vw;
+    }
+    /* 2nd-Box: Grid area-My_details style */
+    .nmplt {
+        grid-area: dtl;
+        width: 25vw;
+        height: 14.5vw;
+        padding-top: 3vw;
+        font-size: 1.25vw;
+        text-indent: 3vw;
+        background-color: rgba(0, 0, 0, 20%);
+        border-radius: 0.5vw;
+        text-align: left;
+        line-height: 2vw;
+    }
+    /* 3rd-Box: Grid area-My_picture style */
+    img.pic {
+        grid-area: imgp;
+        width: 15.5vw;
+        height: 14.5vw;
+        border-radius: 0.5vw;
+        border: 0.1vw solid rgba(0, 0, 0, 20%);
+        justify-self: right;
+    }
+    /* --------------------------------------------------- */
+    /* 2nd-Section: Experiencs style */
+    .exp {
+        width: 100vw;
+        height: 55vw;
+        background-color: #4b4949dc;
+    }
+    /* Main Container for my experiencs style */
+    .exp-container {
+        width: 100vw;
+        height: 55vw;
+        background-color: white;
+        display: grid;
+        grid: ' bx1 bx1 bx1 dt1 dt1 dt1 dt1 dt1 dt1 dt1 ' ' bx2 bx2 bx2 dt2 dt2 dt2 dt2 dt2 dt2 dt2 ' ' bx3 bx3 bx3 dt3 dt3 dt3 dt3 dt3 dt3 dt3 ' ' bx4 bx4 bx4 dt4 dt4 dt4 dt4 dt4 dt4 dt4 ';
+    }
+    /* 1st-Grid area: 1st-box of my last/present(4th) position style */
+    .bx1 {
+        grid-area: bx1;
+        background-color: #98cb00;
+        width: 20vw;
+        padding: 2vw 1vw 1vw 2vw;
+        margin: 1vw;
+        border-radius: 0.5vw;
+        justify-self: center;
+        color: white;
+        font-size: 1.3vw;
+        text-shadow: 0.5vw 0.5vw 1.5vw rgb(0, 0, 0);
+    }
+    /* 2nd-Grid area: 1st-box of my last/present(4th) job & company detail style */
+    .dt1 {
+        grid-area: dt1;
+        color: #98cb00;
+        width: 75vw;
+        margin: 1vw;
+        justify-self: center;
+        line-height: 2vw;
+    }
+    .bdflag {
+        width: 3.8vw;
+        height: 2.6vw
+    }
+    .cpblogo {
+        width: 3vw;
+        height: 3.5vw;
+    }
+    /* 3rd-Grid area: 2nd-box of my previous(3rd) position style */
+    .bx2 {
+        grid-area: bx2;
+        background-color: #cc6733;
+        width: 20vw;
+        padding: 2vw 1vw 1vw 2vw;
+        margin: 1vw;
+        border-radius: 0.5vw;
+        justify-self: center;
+        color: white;
+        font-size: 1.3vw;
+        text-shadow: 0.5vw 0.5vw 1.5vw rgb(0, 0, 0);
+    }
+    /* 4th-Grid area: 2nd-box of my previous(3rd) job & company detail style */
+    .dt2 {
+        grid-area: dt2;
+        color: #cc6733;
+        width: 75vw;
+        margin: 1vw;
+        justify-self: center;
+        line-height: 2vw;
+    }
+    .pkflag {
+        width: 3.8vw;
+        height: 2.6vw;
+        border: 0.01vw solid black;
+    }
+    .cpklogo {
+        width: 3vw;
+        height: 3.5vw;
+    }
+    /* 5th-Grid area: 3rd-box of my previous(2nd) position style */
+    .bx3 {
+        grid-area: bx3;
+        background-color: #3398cc;
+        width: 20vw;
+        padding: 2vw 1vw 1vw 2vw;
+        margin: 1vw;
+        border-radius: 0.5vw;
+        justify-self: center;
+        color: white;
+        font-size: 1.3vw;
+        text-shadow: 0.5vw 0.5vw 1.5vw rgb(0, 0, 0);
+    }
+    /* 6th-Grid area: 3rd-box of my previous(2nd) job & company detail style */
+    .dt3 {
+        grid-area: dt3;
+        color: #3398cc;
+        width: 75vw;
+        margin: 1vw;
+        justify-self: center;
+        line-height: 2vw;
+    }
+    .thflag {
+        width: 3.8vw;
+        height: 2.6vw
+    }
+    .cpflogo {
+        width: 3vw;
+        height: 3vw;
+    }
+    /* 7th-Grid area: 4th-box of my first(1st) position style */
+    .bx4 {
+        grid-area: bx4;
+        background-color: #676767;
+        width: 20vw;
+        padding: 2vw 1vw 1vw 2vw;
+        margin: 1vw;
+        border-radius: 0.5vw;
+        justify-self: center;
+        color: white;
+        font-size: 1.3vw;
+        text-shadow: 0.5vw 0.5vw 1.5vw rgb(0, 0, 0);
+    }
+    /* 8th-Grid area: 4th-box of my first(1st) job & company detail style */
+    .dt4 {
+        grid-area: dt4;
+        color: #676767;
+        width: 75vw;
+        padding: 0;
+        margin: 1vw;
+        justify-self: center;
+        line-height: 2vw;
+    }
+    .sahalogo {
+        width: 3vw;
+        height: 3vw;
+    }
+    /* Company name style */
+    .cpn {
+        font-size: 2.2vw;
+        font-weight: 700;
+    }
+    /* Time experience preiod style*/
+    .prd {
+        font-size: 1.8vw;
+        font-weight: 400;
+    }
+    /* Job details style */
+    .jb {
+        color: #6b6b6b;
+        font-size: 1.5vw;
+    }
+    /* --------------------------------------------------- */
+    /* 3rd Section: Main Grid-Container of other details style */
+    .other {
+        width: 100vw;
+        height: 40vw;
+        background-image: url('./footer1.jpg');
+        background-size: 100% 100%;
+        padding: 2.5vw;
+        display: grid;
+        grid: ' . ed ed ed . hb hb hb . ad ad ad . ';
+    }
+    /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+    /* 1st-Grid area: Sub-Grid-Container of my Eduction style */
+    .ed {
+        grid-area: ed;
+        width: 30vw;
+        height: 35vw;
+        padding: 3vw;
+        background-color: rgba(255, 255, 255, 95%);
+        border-radius: 1vw;
+        display: grid;
+        grid: 'ed1' 'ed2' 'ed3' 'ed4';
+    }
+    /* 1st-box: Grid area of education logo style */
+    .ed1 {
+        grid-area: ed1;
+        justify-self: center;
+    }
+    /* Edu-Logo pic style */
+    .edlogo {
+        width: 8vw;
+        justify-self: center;
+    }
+    /* 2nd-box: Grid area of my education details style */
+    .ed2 {
+        grid-area: ed2;
+        font-size: 1.2vw;
+        line-height: 2vw;
+        text-align: center;
+    }
+    /* 3rd-box: Grid area of my a University logo style */
+    .ed3 {
+        grid-area: ed3;
+        width: 35%;
+        justify-self: center;
+    }
+    /* BUU-Logo pic style */
+    .buulogo {
+        width: 8vw;
+    }
+    /* 4th-box: Grid area of my a University name style */
+    .ed4 {
+        grid-area: ed4;
+        font-size: 1.2vw;
+        line-height: 1.8vw;
+        text-align: center;
+    }
+    /* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
+    /* 2nd-Grid area: Sub-Grid-Container of my Interested/Hobby style */
+    .hb {
+        grid-area: hb;
+        width: 30vw;
+        height: 35vw;
+        padding: 3.5vw;
+        background-color: rgba(255, 255, 255, 95%);
+        border-radius: 1vw;
+        display: grid;
+        grid: 'hb1' 'hb2''hb3';
+    }
+    /* 1st-box: Grid area of hobby logo style */
+    .hb1 {
+        grid-area: hb1;
+        justify-self: center;
+    }
+    /* Hobby/Interestd logo style */
+    .hobbylogo {
+        width: 8vw;
+    }
+    /* 2nd-box: Grid area of my Interested topics style */
+    .hb2 {
+        grid-area: hb2;
+        font-size: 1.1vw;
+        line-height: 1.8vw;
+        text-align: left;
+    }
+    /* Indent details of computer lang */
+    .cmlang {
+        text-indent: 2vw;
+    }
+    /* 3rd-box: Grid area of my Interested objective style */
+    .hb3 {
+        grid-area: hb3;
+        font-size: 1.1vw;
+        line-height: 1.8vw;
+        text-align: left;
+    }
+    /* Indent details of objective */
+    .ds {
+        text-indent: 2vw;
+    }
+    /* cccccccccccccccccccccccccccccccccccccccccccccccccc */
+    /* 3rd-Grid area: Sub-Grid-Container of my address style */
+    .ad {
+        grid-area: ad;
+        width: 30vw;
+        height: 35vw;
+        padding: 3vw;
+        background-color: rgba(255, 255, 255, 95%);
+        border-radius: 1vw;
+        display: grid;
+        grid: 'ad1' 'ad2' 'ad3';
+    }
+    /* 1st-box: Grid area of adress logo style */
+    .ad1 {
+        grid-area: ad1;
+        height: 2vw;
+        margin: 1vw;
+        justify-self: center;
+    }
+    /* Address logo style */
+    .addlogo {
+        width: 6vw;
+        justify-self: center;
+    }
+    /* 2nd-box: Grid area of adress details style */
+    .ad2 {
+        grid-area: ad2;
+        font-size: 1.1vw;
+        line-height: 1.8vw;
+        text-indent: 1.5vw;
+    }
+    /* 3rd-box: Grid area of www-adress style */
+    .ad3 {
+        grid-area: ad3;
+        height: 1.5vw;
+        font-size: 1.1vw;
+        text-align: center;
+    }
+    /* ---------------------------------------------- */
+    /* Footer Section style */
+    .foot {
+        width: 100vw;
+        height: 2vw;
+        padding: 0.5vw;
+        background-color: rgb(90, 89, 89);
+        font-size: 1.1vw;
+        color: white;
+        text-align: center;
+    }
+}
+
+
+/* End of desktop &landscape tablets: Responsive behaviors */
